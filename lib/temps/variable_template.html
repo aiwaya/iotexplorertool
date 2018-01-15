@@ -1,0 +1,22 @@
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Event Type</th>
+        <th>IF</th>
+        <th>Value</th>
+        <th>Initial Value</th>
+        <th>Description</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+        <td>{{row.name}}</td>
+        <td>{{row.dataType}}</td>
+        <td>{{row.eventSource}}</td>
+        <td>{{row.condition}}</td>
+        <td>{{row.value}}</td>
+        <td>{{row.initialValue}}</td>
+        <td>{{row.description}}</td>
+    </tr>
+    {% endfor %}
+</table>

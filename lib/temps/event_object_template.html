@@ -1,0 +1,13 @@
+<table border="1">
+    <tr>
+        <td colspan="2">{{label}} {{fullName}}</td>
+    </tr>
+    {% for f in rows %}
+    {% if f.type %}
+    <tr>
+        <td>{{f.label}} {{f.fullName}}</td>
+        <td>{{f.type}}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+</table>

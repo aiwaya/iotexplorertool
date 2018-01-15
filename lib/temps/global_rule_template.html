@@ -1,0 +1,21 @@
+<table border="1">
+
+
+    <tr>
+        <th>When</th>
+        <th>IF</th>
+        <th>Action</th>
+        <th>Change State</th>
+        <th>Description</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+        <td>{{row.when}}</td>
+        <td>{{row.if}}</td>
+        <td>{{row.action.tString}}</td>
+        <td>{{row.change_state}}</td>
+        <td>{{row.description}}</td>
+    </tr>
+    {% endfor %}
+
+</table>

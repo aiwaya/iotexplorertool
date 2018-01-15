@@ -1,0 +1,49 @@
+{
+  "inputFieldAssignments":[
+    {
+      "valueExpression":"$event_data",
+      "field":"Event_Data__c",
+      "dataType":"Text"
+    },
+    {
+      "valueExpression":"$key",
+      "field":"Key__c",
+      "dataType":"Text"
+    },
+    {
+      "valueExpression":"\"$state\"",
+      "field":"State__c",
+      "dataType":"Text"
+    },
+    {
+      "valueExpression":"$variable_data",
+      "field":"Variable_Data__c",
+      "dataType":"Text"
+    },
+    {
+      "valueExpression":"$reference_data",
+      "field":"Reference_Data__c",
+      "dataType":"Text"
+    },
+    {
+      "valueExpression":"\"$when\"",
+      "field":"When__c",
+      "dataType":"Text"
+    },
+    {
+      "valueExpression":"\"$condition\"",
+      "field":"Condition__c",
+      "dataType":"Text"
+    }
+  ],
+  "name":"salesforceObjectCreate",
+  "isResponseIngested":false,
+  "recordFilters":[
+
+  ],
+  "responseEvent":"",
+  "label":"DEBUG LOG",
+  "id":999,
+  "type":"syncOutput",
+  "sObjectApiName":"Z_OrchestrationLog__c"
+}

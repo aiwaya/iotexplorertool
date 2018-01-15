@@ -1,0 +1,32 @@
+<table border="1">
+
+    <tr>
+        <td colspan="4">{{state}}</td>
+    </tr>
+    <tr>
+        <th>IF When</th>
+        <th>Condition</th>
+        <th>Actions</th>
+        <th>Transition</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+        <td>{{row.ifwhen}}</td>
+        <td>{{row.condition}}</td>
+        <td>
+
+            <table>
+                {% for action in row.actions %}
+                <tr>
+                    <td>{{action.type}} {{action.tString}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+
+        </td>
+        <td>{{row.transition}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
