@@ -3,21 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>IoT Explorer Documentation</title>
+    <style>
+        html {
+            font-family: 'Salesforce Sans', Arial,sans-serif;
+        }
+        div>table {
+            border-collapse: collapse;
+            table-layout: auto;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border: none;
+        }
+        div>table>tbody>tr {
+            border: 1px solid rgb(221, 219, 218);
+            border-left: none;
+            border-right: none;
+        }
+        div>table th {
+            color: rgb(81, 79, 77);
+            background-color: rgb(243,242,242);
+            font-weight: 400;
+            height: 1.25rem;
+            line-height: 1.25rem;
+        }
+        div>table>tbody td, div>table>tbody th {
+            color: rgb(81, 79, 77);
+            padding: 4px 8px;
+            font-weight: 400;
+            text-align: left;
+            border-right: 1px solid rgb(221, 219, 218);
+            border-left: 1px solid rgb(221, 219, 218);
+        }
+        div>table>tbody>tr>td:first-child, div>table>tbody>tr>th:first-child {
+            border-left: none;
+        }
+        div>table>tbody>tr>td:last-child, div>table>tbody>tr>th:last-child {
+            border-right: none;
+        }
+        div>table>tbody td{
+            font-size: 0.75rem;
+        }
+        div>table>tbody th{
+            font-size: 0.75rem;
+        }
+        div>table>tbody>tr:first-child>td {
+            color: #fff;
+            background-color: rgba(6, 28, 63, .9);
+            font-size: 0.85rem;
+            padding: 6px 8px;
+        }
+        div>table table td {
+            padding: 0;
+        }
+        #context {
+            padding: 1rem 0;
+        }
+        #context table {
+            table-layout: fixed;
+            margin-bottom: 2rem;
+        }
+        #context table tbody tr td {
+            color: rgb(81, 79, 77);
+            font-size: 0.85rem;
+            padding: 4px 8px;
+        }
+        #context table tbody tr:nth-child(2n+1) td {
+            background-color: rgba(243,242,242,.7);
+            font-size: 0.85rem;
+        }
+
+        #context table tbody tr:first-child td {
+            padding: 6px 8px;
+            background-color: rgba(22, 50, 92, .2);
+            font-size: 0.85rem;
+            color: rgb(22, 50, 92);
+
+        }
+
+    </style>
 </head>
 <body>
 
 <div id="rules">
     $rules_html
 </div>
-<br/><br/>
 <div id="global_rules">
     $global_rules_html
 </div>
-<br/><br/>
 <div id="variables">
     $variables_html
 </div>
-<br/><br/>
 <div id="context">
     $context_html
 </div>

@@ -75,7 +75,7 @@ program
 program
     .command('orch:retrieve <name>')
     .alias('or')
-    .description('[Orch] Retreive the specific orchestration metadata as zip file. <name> is orchestration name')
+    .description('[Orch] Retrieve the specific orchestration metadata as zip file. <name> is orchestration name')
     .action(name => downloadOrchestration(name));
 
 program
