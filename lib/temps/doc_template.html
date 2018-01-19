@@ -26,13 +26,14 @@
             height: 1.25rem;
             line-height: 1.25rem;
         }
-        div>table>tbody td, div>table>tbody th {
+        div>table>tbody>tr>td, div>table>tbody>tr>th {
             color: rgb(81, 79, 77);
             padding: 4px 8px;
             font-weight: 400;
             text-align: left;
             border-right: 1px solid rgb(221, 219, 218);
             border-left: 1px solid rgb(221, 219, 218);
+            word-wrap: break-word;
         }
         div>table>tbody>tr>td:first-child, div>table>tbody>tr>th:first-child {
             border-left: none;
@@ -57,6 +58,21 @@
         }
         #context {
             padding: 1rem 0;
+        }
+        #rules>table {
+            table-layout: fixed;
+        }
+        table .col1 {
+            width: 20%;
+        }
+        table .col2 {
+            width: 35%;
+        }
+        table .col3 {
+            width: 30%;
+        }
+        table .col4 {
+            width: 15%;
         }
         #context table {
             table-layout: fixed;
